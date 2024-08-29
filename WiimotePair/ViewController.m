@@ -94,7 +94,7 @@
 
 - (void)deviceInquiryDeviceFound:(IOBluetoothDeviceInquiry*)sender device:(IOBluetoothDevice*)device {
     // Skip unsupported devices.
-    if (![device.name containsString:@"Nintendo RVL-CNT-01"]) {
+    if (![device.name containsString:@"Nintendo RVL-CNT-01"] && ![device.name containsString:@"Nintendo RVL-CNT-01-TR"]) {
         return;
     }
     
